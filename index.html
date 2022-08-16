@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Cool Shop</title>
+</head>
+<body>
+    <nav>
+      <div class="logo-container">
+        <p class="logo">The Static Shop</p>
+      </div>
+      <div class="elements-container">
+        <a href="./meta/meta.html">Metaverse</a>
+        <a href="/">About Us</a>
+        <input type="text" name="" id="search" placeholder="Search">
+      </div>
+    </nav>
+    <div class="container">
+      <div class="inner-container">
+        <div class="product-container product-1">
+          <div class="inner-product-container">
+            <div class="img-slideshow">
+              <div class="imgSlides">
+                <img src="./assets/img/white1.png" alt="White T-Shirt Front" />
+              </div>
+              <div class="imgSlides">
+                <img style="width: 230px; padding-top: 29px;" src="./assets/img/white-back.png" alt="White T-Shirt Back" />
+              </div>
+              <div class="imgSlides">
+                <img src="./assets/img/white1.png" alt="White T-Shirt Front" />
+              </div>
+              <a class="slider-btn previous" onclick="setSlides(-1)"> < </a>
+              <a class="slider-btn next" onclick="setSlides(1)"> > </a>
+            </div>
+            <div class="information-container">
+              <h3 class="product-title">Basic Oversized Tee</h3>
+              <p class="product-information">Color: White</p>
+              <p class="product-price">39.99 €</p>
+              <button class="add-button">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-container product-2">
+          <div class="inner-product-container">
+            <div class="img-slideshow">
+              <div class="imgSlidesTwo">
+                <img style="width: 350px; padding-top: 5px; padding-right: 5px;" src="./assets/img/grey1.png" alt="Grey T-Shirt Front" />
+              </div>
+              <div class="imgSlidesTwo">
+                <img style="width: 330px; padding-top: 45px; padding-bottom: 58px;" src="./assets/img/grey-back.png" alt="White T-Shirt Back" />
+              </div>
+              <div class="imgSlidesTwo">
+                <img style="width: 350px; padding-top: 5px; padding-right: 5px;" src="./assets/img/grey1.png" alt="Grey T-Shirt Front" />
+              </div>
+              <a class="slider-btn previous" onclick="setSlidesTwo(-1)"> < </a>
+              <a class="slider-btn next" onclick="setSlidesTwo(1)"> > </a>
+            </div>                     
+            <div class="information-container">
+              <h3 class="product-title">Basic Tee</h3>
+              <p class="product-information">Color: Grey</p>
+              <p class="product-price">29.99 €</p>
+              <button class="add-button">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-container product-3">
+          <div class="inner-product-container">
+            <div class="img-slideshow">
+              <div class="imgSlidesThree">
+                <img style="width: 250px;" src="./assets/img/black-front.png" alt="Black T-Shirt Front" />
+              </div>
+              <div class="imgSlidesThree">
+                <img style="width: 175px; padding-top: 50px; padding-bottom: 58px;" src="./assets/img/black-back.png" alt="Black T-Shirt Back" />
+              </div>
+              <div class="imgSlidesThree">
+                <img style="width: 250px;" src="./assets/img/black-front.png" alt="Black T-Shirt Front" />
+              </div>
+              <a class="slider-btn previous" onclick="setSlidesThree(-1)"> < </a>
+              <a class="slider-btn next" onclick="setSlidesThree(1)"> > </a>
+            </div>       
+            <div class="information-container">
+              <h3 class="product-title">Basic Oversized Tee</h3>
+              <p class="product-information">Color: Black</p>
+              <p class="product-price">39.99 €</p>
+              <button class="add-button">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-card">
+        <h2>Checkout-List</h2>
+        <div class="checkout-container">
+          <p id="checkoutList"> </p>
+        </div>
+        <div class="item-information">
+          <p id="items">0 </p>
+          <p id="total">0 </p>
+        </div>
+        <div class="card-buttons">
+          <button id="emptyCard">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>

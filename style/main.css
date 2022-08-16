@@ -1,0 +1,245 @@
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: poppins}
+
+@font-face {
+  font-family: orbitronBold;
+  src: url(../assets/font/Orbitron-Bold.ttf);
+}
+
+@font-face {
+  font-family: orbitronExtra;
+  src: url(../assets/font/Orbitron-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../assets/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url(../assets/font/Poppins-Bold.ttf);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: poppinsBold;
+}
+
+nav {
+  padding: 30px;
+  font-weight: bold;
+  background-color: #e4ddf4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > .elements-container > a {
+  text-decoration: none;
+  color: #282612;
+  font-family: orbitronBold;
+  margin-right: 25px;
+}
+
+#search {
+  padding: 5px 0 5px 15px;
+  font-size: .8em;
+  font-family: orbitronBold;
+  color: #282612;
+  background: transparent;
+  width: 180px;
+  border: 2px solid #fffbf0;
+  border-radius: 10px;
+  letter-spacing: .2px;
+}
+
+#search::placeholder {
+  color: #282612;
+  font-family: orbitronBold;
+}
+
+#search:active {
+  border: 2px solid #943d24;
+}
+
+.logo {
+  font-family: orbitronExtra;
+  font-size: 22px;
+}
+
+nav > .elements-container > a:hover {
+  color: #943d24
+}
+
+.container {
+  padding: 50px 10px;
+  background-color: #fffbf0;
+  color: #272727;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-container {
+  width: 33.33%;
+  margin: 0 auto;
+}
+
+.product-container {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 10px;
+  background-color: #F4F5F6;
+} 
+
+.product-2 {
+  margin: 15px 0;
+}
+
+.inner-product-container {
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  display: block;
+  width: 250px;
+}  
+
+.black1 {
+  width: 380px;
+}
+
+.img-slideshow {
+  width: 100%;
+  position: relative;
+  border-bottom: 3px solid #FFFBF0;
+}
+
+.slider-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px 16px;
+  margin-top: -22px;
+  color: #282612;
+  font-weight: bold;
+  font-size: 18px;
+  transition: .6s ease;
+  border-radius: 0 3px 0;
+  user-select: none;
+  border-radius: 10px;
+}
+
+.previous {
+  left: 2%;
+}
+
+.next {
+  right: 2%;
+}
+
+.previous:hover, .next:hover {
+  color: #fff;
+  background-color: #666666;
+}
+
+.information-container {
+  text-align: left;
+  padding: 30px;
+}
+
+.product-price, .product-information {
+  margin: 5px 0;
+}
+.add-button {
+  display: block;
+  margin: 25px auto 0 auto;
+  height: 35px;
+  width: 150px;
+  max-width: 250px;
+  background-color: transparent;
+  border: 2px solid #6A66A3;
+  color: #6A66A3;
+  border-radius: 5px;
+  font-family: poppinsBold;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #6A66A3;
+  border: 2px solid  #6A66A3;
+  color: #fffbf0;
+}
+
+.checkout-card {
+  width: 30%;
+  border-left: 1px solid #9999;
+  padding: 20px;
+  text-align: right;
+}
+
+.checkout-container > #checkoutList > div {
+  border-bottom: 1px solid #6666
+}
+
+#checkoutList {
+  margin: 20px 0;
+  
+} 
+
+.checkout-container > #checkoutList > div > p {
+  margin: 15px 0;
+}
+
+.item-information {
+  width: 240px;
+  display: inline-flex;
+  justify-content: end;
+  font-weight: bold;
+}
+
+#items {
+  font-family: poppinsbold;
+}
+
+#total {
+  margin-left: 20px;
+  font-family: poppinsbold;
+}
+
+.card-buttons {
+  margin-top: 25px;
+}
+
+#emptyCard {
+  height: 35px;
+  width: 120px;
+  margin-right: 2%;
+  background-color: transparent;
+  border: 2px solid #C5283D;
+  border-radius: 5px;
+  font-family: poppinsBold;
+  color: #C5283D;
+  cursor: pointer;
+}
+
+#emptyCard:hover {
+  background-color: #C5283D;
+  color: #fffbf0;
+}
+
+#checkout {
+  height: 35px;
+  width: 120px;
+  margin-left: 2%;
+  background-color: transparent;
+  border: 2px solid #379634;
+  border-radius: 5px;
+  font-family: poppinsBold;
+  color: #379634;
+  cursor: pointer;
+}
+
+#checkout:hover {
+  background-color: #379634;
+  color: #fffbf0;
+}
