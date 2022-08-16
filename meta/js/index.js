@@ -1,9 +1,9 @@
-import * as THREE from "three";
+import * as THREE from 'three';
 
-import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { FontLoader } from '../node_modules/three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from '../node_modules/three/examples/jsm/geometries/TextGeometry.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 
 let camera, scene, renderer;
 
@@ -24,7 +24,7 @@ function init() {
   const groundTexture = new THREE.TextureLoader().load('./assets/texture/texture.jpeg');
   groundTexture.wrapS = THREE.RepeatWrapping;
   groundTexture.wrapT = THREE.RepeatWrapping;
-  let material = new THREE.MeshLambertMaterial({map: groundTexture})
+  const material = new THREE.MeshLambertMaterial({map: groundTexture})
   
   const plane = new THREE.Mesh(new THREE.PlaneGeometry(20, 20), material);
   plane.overdraw = true;
@@ -33,7 +33,7 @@ function init() {
   plane.receiveShadow = true;
   scene.add(plane)
 
-  let loader = new THREE.TextureLoader()
+  const loader = new THREE.TextureLoader()
   loader.load('./assets/skybox/stars.jpg', function (texture) {
     texture.magFilter = THREE.LinearFilter;
     texture.minFilter = THREE.LinearFilter
