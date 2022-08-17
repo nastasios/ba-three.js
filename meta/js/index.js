@@ -43,18 +43,26 @@ function init() {
     render();
 
     // tshirt #1 / Right
-    const loader = new GLTFLoader().setPath(
-      ('./assets/shirts/')
-    );
-    loader.load('greyShirt.gltf', function (gltf) {
-      const root = gltf.scene;
+    const soldOutLoader = new FontLoader();
 
-      scene.add(root);
-      root.updateMatrixWorld();
-      root.position.set(5, 0, 0);
-
-      render(); 
-    })
+    soldOutLoader.load( './assets/fonts/helvetiker_regular.typeface.json', function ( font ) {
+      const textGeo = new TextGeometry( 'SOLD OUT', {
+        font: font,
+        size: .2,
+        height: .05,
+      });
+      
+      const textMesh = new THREE.Mesh( textGeo, [
+        new THREE.MeshPhongMaterial({ color: 0xC5283D }), // font
+        new THREE.MeshPhongMaterial({ color: 0xC5283D }) // side
+      ])
+      
+      textMesh.castShadow = true;
+      textMesh.position.z = 0;
+      textMesh.position.x = 4.3;
+      textMesh.position.y = 1.2;
+      scene.add( textMesh );
+    });
 
     // tshirt #2 / Middle
     const loader2 = new GLTFLoader().setPath(
