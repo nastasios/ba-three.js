@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-Shop</title>
+</head>
+<body>
+  <p class="info-text" data-hover="Left-Click: Rotate, Right-Click: Move, Zoom: Mouse Wheel">Info</p>
+</body>
+
+<style>
+  * {margin: 0; padding: 0;}
+
+  .info-text {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #ffffff;
+  }
+
+  .info-text::before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 150px;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    right: .5px;
+    top: 3px;
+  }
+
+  .info-text:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+</style>
+
+
+<script type="module" src="bundle.js"></script>
+</html>

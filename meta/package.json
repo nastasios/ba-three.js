@@ -1,0 +1,19 @@
+{
+  "name": "meta",
+  "version": "1.0.0",
+  "source": "js/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^2.78.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "three": "^0.143.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.143.0"
+  }
+}
