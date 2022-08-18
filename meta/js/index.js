@@ -97,7 +97,7 @@ function init() {
     // Text Middle Tshirt 
     const fontLoader = new FontLoader();
     fontLoader.load( './assets/fonts/helvetiker_regular.typeface.json', function ( font ) {
-      const textGeo = new TextGeometry( 'Color: White \nPrice: 29.99 $', {
+      const textGeo = new TextGeometry( 'Color: White \nPrice: 0.0013 BTC', {
         font: font,
         size: .1,
         height: .05,
@@ -110,7 +110,7 @@ function init() {
       
       textMesh.castShadow = true;
       textMesh.position.z = 0;
-      textMesh.position.x = -0.4;
+      textMesh.position.x = -0.5;
       textMesh.position.y = 2;
       scene.add( textMesh );
     });
@@ -119,7 +119,7 @@ function init() {
     const fontLoader2 = new FontLoader();
 
     fontLoader2.load( './assets/fonts/helvetiker_regular.typeface.json', function ( font ) {
-      const textGeo = new TextGeometry( 'Color: Grey \nPrice: 29.99 $', {
+      const textGeo = new TextGeometry( 'Color: Grey \nPrice: 0.0013 BTC', {
         font: font,
         size: .1,
         height: .05,
@@ -132,7 +132,7 @@ function init() {
       
       textMesh.castShadow = true;
       textMesh.position.z = 0;
-      textMesh.position.x = 4.6;
+      textMesh.position.x = 4.4;
       textMesh.position.y = 2;
       scene.add( textMesh );
     });
@@ -141,7 +141,7 @@ function init() {
     const fontLoader3 = new FontLoader();
 
     fontLoader3.load( './assets/fonts/helvetiker_regular.typeface.json', function ( font ) {
-      const textGeo = new TextGeometry( 'Color: Black \nPrice: 29.99 $', {
+      const textGeo = new TextGeometry( 'Color: Black \nPrice: 0.0013 BTC', {
         font: font,
         size: .1,
         height: .05,
@@ -154,7 +154,7 @@ function init() {
       
       textMesh.castShadow = true;
       textMesh.position.z = 0;
-      textMesh.position.x = -5.4;
+      textMesh.position.x = -5.5;
       textMesh.position.y = 2;
       scene.add( textMesh );
     });
