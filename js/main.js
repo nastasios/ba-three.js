@@ -1,8 +1,8 @@
  // get card total from session storage
  getCardTotal();
-
+// On Click run emptyCheckout()
  document.getElementById("emptyCard").addEventListener("click", emptyCheckout);
- var btn = document.getElementsByClassName('add-button');
+ const btn = document.getElementsByClassName('add-button');
  for (var i = 0; i < btn.length; i++) {
    btn[i].addEventListener('click', function() {
      addToCard(this);
@@ -27,12 +27,12 @@
      siblings.push(elem)
    }
    // Product Object
-   var product = {
+   const product = {
      productName : getProductName,
      price : getPrice
    };
    // Product to JSON
-   var stringProduct = JSON.stringify(product);
+   const stringProduct = JSON.stringify(product);
 
    // Send to Session Storage
    if(!sessionStorage.getItem('card')) {
@@ -65,13 +65,13 @@
    var checkoutList = "";
    if (sessionStorage.getItem('card')) {
      // Get Card Data
-     var card = JSON.parse(sessionStorage.getItem('card'));
+     const card = JSON.parse(sessionStorage.getItem('card'));
      // Get Number of Items
      items = card.length;
 
      for (var i = 0; i < items; i++) {
        // Convert each JSON into Obejct
-       var x = JSON.parse(card[i]);
+       const x = JSON.parse(card[i]);
 
        price = parseFloat(x.price);
        productName = x.productName;
@@ -127,7 +127,7 @@
  // Second Slider
  function displaySlidesTwo(num) {
    var y;
-   var slides = document.getElementsByClassName("imgSlidesTwo");
+   const slides = document.getElementsByClassName("imgSlidesTwo");
    if (num > slides.length) { 
      currentSliderIndex = 1 
    }
@@ -146,7 +146,7 @@
  // Third Slider
  function displaySlidesThree(num) {
    var y;
-   var slides = document.getElementsByClassName("imgSlidesThree");
+   const slides = document.getElementsByClassName("imgSlidesThree");
    if (num > slides.length) { 
      currentSliderIndex = 1 
    }
